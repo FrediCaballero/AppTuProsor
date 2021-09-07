@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.apptuprosor">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="AppTuProsor"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".Facebook" />
+        <activity android:name=".Github" />
+        <activity android:name=".Youtube" />
+        <activity android:name=".Docentes" />
+        <activity android:name=".RegistroCursos" />
+        <activity android:name=".RegistroDocente" />
+        <activity android:name=".LoginDocente" />
+        <activity android:name=".DetallesCursos" />
+        <activity android:name=".ListaCursos" />
+        <activity
+            android:name=".Splash"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PoliticaDePrivacidad" />
+        <activity android:name=".Profesores" />
+        <activity android:name=".Cursos" />
+        <activity android:name=".ForgotPassword" />
+        <activity android:name=".Usuario" />
+        <activity android:name=".Registro" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>
